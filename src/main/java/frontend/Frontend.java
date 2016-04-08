@@ -9,5 +9,6 @@ public class Frontend extends HttpServlet {
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
         response.getWriter().println("Hello Jetty Server!");
+        response.setStatus(HttpServletResponse.SC_OK);
     }
 }
